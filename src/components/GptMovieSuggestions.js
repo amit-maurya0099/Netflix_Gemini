@@ -1,9 +1,12 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import MovieList from './MovieList'
-
+import { useState } from 'react'
 
 const GptMovieSuggestions = () => {
+  
+
+
     const gpt=useSelector((store)=>store.gpt)
     const {movieNames,movieResults}=gpt
     if(!movieNames) return null;

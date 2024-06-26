@@ -3,7 +3,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { API_OPTIONS, BG_IMG, IMG_CDN_URL } from '../utils/constants';
 import { addMovieDetail } from '../utils/moviesSlice';
-import Header from './Header';
+
+
+
 
 const MovieDetails = () => {
 
@@ -19,14 +21,16 @@ useEffect(()=>{
 
 getMovieDetail();
 
+},[]);
 
-},[])
+
 
 const movie=useSelector((store)=>store.movies.movieDetail)
 if(!movie) return null;
 
 
  const {title,original_language,overview,poster_path,release_date,runtime,vote_average}=movie;
+ 
   return (
   <>
      <img alt="/" src={BG_IMG} className='h-[100%] w-[100%] ' ></img>
