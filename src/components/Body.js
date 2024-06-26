@@ -3,6 +3,8 @@ import Login from './Login'
 import Browse from './Browse'
 import { createBrowserRouter } from 'react-router-dom'
 import { RouterProvider } from 'react-router-dom'
+import MovieDetails from './MovieDetails'
+
 
 
 
@@ -16,9 +18,13 @@ const Body = () => {
         },
         {
             path:"/browse",
-            element:<Browse/>
-
+            element:<Browse/>,
+        },
+        {
+          path:"/browse/details/:id",
+          element:<MovieDetails/>
         }
+        
     ])
    
 
