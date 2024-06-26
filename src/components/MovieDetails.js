@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
 import { API_OPTIONS, BG_IMG, IMG_CDN_URL } from '../utils/constants';
 import { addMovieDetail } from '../utils/moviesSlice';
+import { clearTrailerVideo } from '../utils/moviesSlice';
  
 
 
@@ -35,6 +36,7 @@ if(!movie) return null;
  const {title,original_language,overview,poster_path,release_date,runtime,vote_average}=movie;
 
  const handleWatchTrailer=()=>{
+  dispatch(clearTrailerVideo());
   navigate("watch");
  }
  

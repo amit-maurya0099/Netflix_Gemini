@@ -7,6 +7,7 @@ import { BG_IMG } from "../utils/constants";
 const WatchTrailer = () => {
   const { id } = useParams();
   
+  
   useMovieTrailer(id);
   const trailerVideo =useSelector((store)=>store.movies.trailerVideo)
  
