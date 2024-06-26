@@ -56,19 +56,19 @@ const Header = () => {
   
 
   return (
-    <div className=' flex justify-between absolute bg-gradient-to-b from-black  py-2 w-full h-[13%]  '>
+    <div className='bg-black md:bg-transparent flex justify-between md:flex  md:flex-row md:justify-between md:absolute bg-gradient-to-b from-black  py-2 w-full h-[13%]  '>
+      <div className='flex justify-center '>
+      <img src={LOGO} alt="/" className=' w-32 md:w-44  md:align-middle' /></div>
      
-      <img src={LOGO} alt="/" className=' align-middle' />
-     
-    {user && <div className='flex items-center justify-center  pr-5'>
+    {user && <div className=' flex justify-center items-center md:flex md:items-center md:justify-center  pr-5'>
       {showGptSearch && (
       <select className='bg-gray-700 text-white h-[40%] rounded-lg ' onChange={handleLanguageChange}>
         {LANUAGE_OPTIONS.map((lang)=>(
           <option key={lang.identifier} value={lang.identifier}>{lang.name}</option>
         ))}
       </select>)}
-      <button  onClick={handleGptSearchClick} className='bg-purple-600 m-2 rounded-lg px-1 h-[40%] text-white'>{showGptSearch?"Homepage":"GPT_Search"}</button>
-      <img alt="usericon" src={user.photoURL} className='m-2 h-[40%] '/>
+      <button  onClick={handleGptSearchClick} className='bg-purple-600 m-2 rounded-lg px-1 h-[40%] text-white'>{showGptSearch?"Homepage":"Gemini_Search"}</button>
+      <img alt="usericon" src={user.photoURL} className='m-2 h-8 md:h-[40%] '/>
       <button onClick={handleSignOut} className='bg-gray-300 m-2 rounded-lg px-1 h-[40%]'>Sign out</button>
       </div>}
 
