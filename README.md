@@ -15,7 +15,7 @@ Netflix_Gemini is a React-based web application that replicates the core functio
 - **State Management:** Efficient state management using   Redux.
 - **API Integration:** Fetches data from a movie database API to provide real-time information.
 
-  ## Technologies Used
+ ## Technologies Used
 - React: For building the user interface.
 - React Router: For navigation between pages.
 - Redux: For state management.
