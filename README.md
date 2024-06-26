@@ -1,5 +1,5 @@
 # Netflix_Gemini
-Netflix_Gemini is a React-based web application that replicates the core functionalities and user interface of Netflix .It is  also integrated with Gemini for movie suggestions based on user interest. This project showcases modern web development techniques, including responsive design, state management, and API integration.
+Netflix_Gemini is a React-based web application that replicates the core functionalities and user interface of Netflix, enhanced with unique features to provide an exceptional user experience. This project demonstrates modern web development practices, including responsive design, state management, and API integration.
 
 ![Screenshot 2024-06-26 173624](https://github.com/amit-maurya0099/Netflix_Gemini/assets/139799731/a4a3213c-6391-47e1-a485-f0d54bad1f2c)
 ![Screenshot 2024-06-26 173715](https://github.com/amit-maurya0099/Netflix_Gemini/assets/139799731/9f7954f0-5195-4146-91f9-74f605afd623)
