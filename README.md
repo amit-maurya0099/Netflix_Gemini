@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# Netflix_Gemini
+Netflix_Gemini is a React-based web application that replicates the core functionalities and user interface of Netflix, enhanced with unique features to provide an exceptional user experience. This project demonstrates modern web development practices, including responsive design, state management, and API integration.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Screenshot 2024-06-26 173624](https://github.com/amit-maurya0099/Netflix_Gemini/assets/139799731/a4a3213c-6391-47e1-a485-f0d54bad1f2c)
+![Screenshot 2024-06-26 173715](https://github.com/amit-maurya0099/Netflix_Gemini/assets/139799731/9f7954f0-5195-4146-91f9-74f605afd623)
+![Screenshot 2024-06-26 173803](https://github.com/amit-maurya0099/Netflix_Gemini/assets/139799731/1af00fcc-ab83-474a-8c15-3d01f699daf3)
+![Screenshot 2024-06-26 173838](https://github.com/amit-maurya0099/Netflix_Gemini/assets/139799731/d0be585f-c043-48ae-b854-0524d735dad1)
 
-## Available Scripts
+## Features
+- **User Authentication:** Secure login and signup functionality.
+- **Home Page:** A dynamic home page displaying trending movies and highest rated movies.
+- **Search Functionality:** Search for your favorite movies with the help of Gemini AI.
+- **Detailed Pages:** Detailed information pages for each movie or TV show, including brief description and ratings.
+- **Responsive Design:** Optimized for various devices, ensuring a seamless user experience on desktops, tablets, and mobiles.
+- **State Management:** Efficient state management using   Redux.
+- **API Integration:** Fetches data from a movie database API to provide real-time information.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ ## Technologies Used
+- React: For building the user interface.
+- React Router: For navigation between pages.
+- Redux: For state management.
+- Tailwind CSS: For styling the application.
+- Fetch API: For making API requests.
+- Firebase/Auth0: For user authentication and database management
