@@ -1,13 +1,15 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { API_OPTIONS, BG_IMG, IMG_CDN_URL } from '../utils/constants';
 import { addMovieDetail } from '../utils/moviesSlice';
+ 
 
 
 
 
 const MovieDetails = () => {
+  const navigate=useNavigate();
 
   const {id}=useParams();
   const dispatch=useDispatch();
@@ -26,10 +28,15 @@ getMovieDetail();
 
 
 const movie=useSelector((store)=>store.movies.movieDetail)
+
 if(!movie) return null;
 
 
  const {title,original_language,overview,poster_path,release_date,runtime,vote_average}=movie;
+
+ const handleWatchTrailer=()=>{
+  navigate("watch");
+ }
  
   return (
   <>
@@ -47,7 +54,8 @@ if(!movie) return null;
             <p className='font-md '>Release Date:<span className='italic font-light'> {release_date}</span></p> 
             <p className='font-md'>Original Language: <span className='italic font-light'>{original_language}</span></p> 
             <p className='font-md'>Run Time:<span className='italic font-light'> {runtime} min</span></p>  
-            <p className='font-md'>IMDB Rating: <span className='italic font-light'>{vote_average}</span></p>  
+            <p className='font-md'>IMDB Rating: <span className='italic font-light'>{vote_average}</span></p> 
+            <button className='bg-red-600 text-xl p-2 m-2 rounded-xl'onClick={handleWatchTrailer}>Watch Trailer</button> 
               </div>
           </div>
         </div>

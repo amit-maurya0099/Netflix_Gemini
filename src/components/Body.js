@@ -4,6 +4,7 @@ import Browse from './Browse'
 import { createBrowserRouter } from 'react-router-dom'
 import { RouterProvider } from 'react-router-dom'
 import MovieDetails from './MovieDetails'
+import WatchTrailer from './WatchTrailer'
 
 
 
@@ -23,6 +24,10 @@ const Body = () => {
         {
           path:"/browse/details/:id",
           element:<MovieDetails/>
+        },
+        {
+          path:"/browse/details/:id/watch",
+          element:<WatchTrailer/>
         }
         
     ])
