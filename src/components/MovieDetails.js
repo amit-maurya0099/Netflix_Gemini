@@ -40,6 +40,7 @@ if(!movie) return null;
   navigate("watch");
  }
  const handleGoBack=()=>{
+  
   navigate("/browse")
  }
  
@@ -61,7 +62,8 @@ if(!movie) return null;
             <p className='font-md'>Run Time:<span className='italic font-light'> {runtime} min</span></p>  
             <p className='font-md'>IMDB Rating: <span className='italic font-light'>{vote_average}</span></p> 
             <button className='bg-red-600 text-xl p-2 m-2 rounded-xl'onClick={handleWatchTrailer}>Watch Trailer</button> 
-            <span><button className='bg-red-600 text-xl p-2 m-2 rounded-xl'onClick={handleGoBack}>Go back</button></span>
+            <span>
+              <button className='bg-red-600 text-xl p-2 m-2 rounded-xl'onClick={handleGoBack}>Go back</button></span>
               </div>
           </div>
         </div>

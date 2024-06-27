@@ -1,10 +1,12 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import useMovieTrailer from "../hooks/useMovieTrailer";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { BG_IMG } from "../utils/constants";
+import { clearTrailerVideo } from "../utils/moviesSlice";
 
 const WatchTrailer = () => {
+  const dispatch=useDispatch();
   const { id } = useParams();
   const navigate=useNavigate();
   
@@ -13,6 +15,7 @@ const WatchTrailer = () => {
   const trailerVideo =useSelector((store)=>store.movies.trailerVideo)
 
   const handleGoBack=()=>{
+    dispatch(clearTrailerVideo());
     navigate(`/browse/details/${id}`)
     
   }
