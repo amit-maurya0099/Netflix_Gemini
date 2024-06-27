@@ -1,15 +1,21 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import useMovieTrailer from "../hooks/useMovieTrailer";
 import { useSelector } from "react-redux";
 import { BG_IMG } from "../utils/constants";
 
 const WatchTrailer = () => {
   const { id } = useParams();
+  const navigate=useNavigate();
   
   
   useMovieTrailer(id);
   const trailerVideo =useSelector((store)=>store.movies.trailerVideo)
+
+  const handleGoBack=()=>{
+    navigate(`/browse/details/${id}`)
+    
+  }
  
 
   return (
@@ -26,6 +32,7 @@ const WatchTrailer = () => {
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
       ></iframe>
+      {trailerVideo && (<div className="bg-black flex justify-center"><button className='bg-red-600 text-xl p-2 m-2 rounded-xl text-white 'onClick={handleGoBack}>Go back</button></div>)}
     </div></>
   );
 };
