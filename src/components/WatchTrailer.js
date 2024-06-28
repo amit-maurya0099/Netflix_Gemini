@@ -23,11 +23,12 @@ const WatchTrailer = () => {
 
   return (
     <>
-    <img src={BG_IMG} alt="/" className="bg-gradient-to-r from-black h-screen w-screen" ></img>
-    <div className=" absolute  top-[12%] left-[20%]  " >
+    <div>
+    <img src={BG_IMG} alt="/" className=" h-screen w-screen object-cover" ></img>
+    <div className=" absolute top-[10%] md:top-[20%] md:left-[40%]  " >
       <iframe
-        width="900"
-        height="550" 
+        width="382"
+        height="280" 
         src={`https://www.youtube.com/embed/${trailerVideo?.key}?si=8Z3CH72i3K0VdlU-`}
         title="YouTube video player"
         frameBorder="0"
@@ -35,8 +36,8 @@ const WatchTrailer = () => {
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
       ></iframe>
-      {trailerVideo && (<div className="bg-black flex justify-center"><button className='bg-red-600 text-xl p-2 m-2 rounded-xl text-white 'onClick={handleGoBack}>Go back</button></div>)}
-    </div></>
+      {trailerVideo && (<div className="bg-black flex justify-center"><button className='bg-red-600 text-sm md:text-lg py-1 px-2 md:p-2 m-2 rounded-xl text-white 'onClick={handleGoBack}>Go back</button></div>)}
+    </div></div></>
   );
 };
 

@@ -46,14 +46,15 @@ if(!movie) return null;
  
   return (
   <>
-     <img alt="/" src={BG_IMG} className='h-[100%] w-[100%] ' ></img>
-     <div className='absolute top-28 left-36'>
+     <img alt="/" src={BG_IMG} className='h-screen w-screen object-cover fixed ' ></img>
+     <div className='absolute top-5 left-10 md:top-28 md:left-48'>
     <div className=' w-[80%] h-[70%] m-5 text-white'>
         <div className=' m-3 bg-yellow bg-red-600 p-1 rounded-xl'>
-          <h1 className='font-bold text-2xl text-center'>{title}</h1>
+          <h1 className='font-bold  text-lg md:text-2xl text-center'>{title}</h1>
         </div>
-        <div className='flex  m-2  h-[80%] text-xl p-2  bg-black bg-opacity-80 rounded-xl'>
-          <div className=' rounded-xl'><img alt="/" src={IMG_CDN_URL+poster_path} className='rounded-xl'></img></div>
+        <div className='  md:flex  m-2  h-[80%] text-sm md:text-xl p-2  bg-black bg-opacity-80 rounded-xl'>
+          <div className=' rounded-xl '><img alt="/" src={IMG_CDN_URL+poster_path} className='w-full h-[300px]
+          md:h-full rounded-xl object-fill md:object-contain '></img></div>
           <div className=' mx-2 w-[100%]'>
             <div className='p-2 italic font-light ' >{overview}</div>
             <div className='p-2'>
@@ -61,9 +62,9 @@ if(!movie) return null;
             <p className='font-md'>Original Language: <span className='italic font-light'>{original_language}</span></p> 
             <p className='font-md'>Run Time:<span className='italic font-light'> {runtime} min</span></p>  
             <p className='font-md'>IMDB Rating: <span className='italic font-light'>{vote_average}</span></p> 
-            <button className='bg-red-600 text-xl p-2 m-2 rounded-xl'onClick={handleWatchTrailer}>Watch Trailer</button> 
+            <button className='bg-red-600  text-sm md:text-xl p-2 my-2 rounded-xl'onClick={handleWatchTrailer}>Watch Trailer</button> 
             <span>
-              <button className='bg-red-600 text-xl p-2 m-2 rounded-xl'onClick={handleGoBack}>Go back</button></span>
+              <button className='bg-red-600 text-sm md:text-xl p-2 m-2 rounded-xl'onClick={handleGoBack}>Go back</button></span>
               </div>
           </div>
         </div>

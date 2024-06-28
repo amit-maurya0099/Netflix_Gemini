@@ -43,7 +43,7 @@ const GptSearchBar = () => {
   return (
     <>
    
-    <div className='absolute top-[15%] md:top-[20%]  w-full flex justify-center   items-center'>
+    <div className='absolute top-[25%] md:top-[20%]  w-full flex justify-center   items-center'>
         <form className='bg-black rounded-xl' onSubmit={(e)=>e.preventDefault()}>
             <input ref={searchText} type="text" placeholder={lang[langKey].getSearchPlaceholder} className=' m-3 px-3 w-[50vw] md:h-10 text-lg rounded-xl'></input>
             <button className='text-white bg-red-600 py-1 px-2 mx-2 rounded-lg md:h-10 w-20' onClick={handleGeminiSearchClick}>{lang[langKey].search}</button>
