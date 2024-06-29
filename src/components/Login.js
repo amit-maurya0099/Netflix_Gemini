@@ -80,12 +80,12 @@ const Login = () => {
 
   return (
 
-    <div>
+    <div className='flex justify-center '>
         <Header/>
     <div className='w-full'>
         <img src={BG_IMG} alt="/" className='h-screen object-cover md:h-full md:w-full '></img>
     </div>
-    <div className='absolute top-[50vw] left-[20vw] md:top-[30%] md:left-[43%] bg-black bg-opacity-70 rounded-xl p-5'>
+    <div className=' absolute top-[50vw]  md:top-[30%] md:left-[43%] bg-black bg-opacity-70 rounded-xl p-5'>
     <form onSubmit={(e)=>e.preventDefault()} >
         <div className=' flex justify-center'>
         <h1 className='font-bold text-xl md:text-3xl text-white my-2 '>{isSignInForm?"Sign In":"Sign Up"}</h1>

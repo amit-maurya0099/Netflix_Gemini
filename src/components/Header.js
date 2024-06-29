@@ -56,8 +56,8 @@ const Header = () => {
   
 
   return (
-    <div className='bg-black md:bg-transparent flex justify-between md:flex  md:flex-row md:justify-between absolute bg-gradient-to-b from-black  py-2 w-full md:h-[13%]  '>
-      <div className='flex justify-center '>
+    <div className='bg-black bg-opacity-70 md:bg-transparent flex justify-between md:flex  md:flex-row md:justify-between absolute bg-gradient-to-b from-black  py-2 w-full md:h-[13%]  '>
+      <div className='flex justify-center'>
       <img src={LOGO} alt="/" className=' w-32 md:w-44  md:align-middle' /></div>
      
     {user && <div className=' flex justify-center items-center md:flex md:items-center md:justify-center pr-1  md:pr-5'>
