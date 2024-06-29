@@ -27,7 +27,7 @@ const WatchTrailer = () => {
     <img src={BG_IMG} alt="/" className=" h-screen w-screen object-cover" ></img>
     <div className=" absolute top-[15%] md:top-[15%] md:left-[18%] " >
       <iframe
-        className="w-screen md:w-[1000px] md:h-[500px] aspect-video "
+        className="w-screen md:w-[1000px] md:h-[500px] aspect-video rounded-lg"
         src={`https://www.youtube.com/embed/${trailerVideo?.key}?si=8Z3CH72i3K0VdlU-`}
         title="YouTube video player"
         frameBorder="0"

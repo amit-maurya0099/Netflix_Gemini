@@ -8,7 +8,7 @@ const VideoBackground = ({ movieId }) => {
   
   return (
     <>
-    <div className="bg-gradient-to-r from-black" >
+    <div className="bg-gradient-to-r from-black pt-10 md:pt-0 " >
       <iframe
       
         className="w-full aspect-video  "

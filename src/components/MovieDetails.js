@@ -64,7 +64,7 @@ if(!movie) return null;
             <p className='font-md'>IMDB Rating: <span className='italic font-light'>{vote_average}</span></p> 
             <button className='bg-red-600  text-sm md:text-xl p-2 my-2 rounded-xl'onClick={handleWatchTrailer}>Watch Trailer</button> 
             <span>
-              <button className='bg-red-600 text-sm md:text-xl p-2 m-2 rounded-xl'onClick={handleGoBack}>Go back</button></span>
+              <button className='bg-red-600 text-sm md:text-xl p-2 m-1 rounded-xl'onClick={handleGoBack}>Go back</button></span>
               </div>
           </div>
         </div>
