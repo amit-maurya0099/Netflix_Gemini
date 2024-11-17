@@ -25,6 +25,7 @@ const Header = () => {
             navigate("/")
           }).catch((error) => {
             // An error happened.
+            
           });
     }
 

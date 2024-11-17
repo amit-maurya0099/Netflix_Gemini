@@ -19,7 +19,7 @@ const GptSearchBar = () => {
         return json.results; // it will return promises 
 
     }
-
+ 
   const handleGeminiSearchClick=async()=>{
    
      
