@@ -10,9 +10,9 @@ Netflix_Gemini is a React-based web application that replicates the core functio
 - **User Authentication:** Secure login and signup functionality.
 - **Home Page:** A dynamic home page displaying trending movies and highest rated movies.
 - **Search Functionality:** Search for your favorite movies with the help of Gemini AI.
-- **Detailed Pages:** Detailed information pages for each movie or TV show, including brief description and ratings.
-- **Responsive Design:** Optimized for various devices, ensuring a seamless user experience on desktops, tablets, and mobiles.
-- **State Management:** Efficient state management using   Redux.
+- **Detailed Pages:** Detailed information pages for each movie or TV show, including brief description, trailer and ratings.
+- **Responsive Design:** Optimized for various devices, ensuring a seamless user experience on desktops and mobiles.
+- **State Management:** Efficient state management using Redux.
 - **API Integration:** Fetches data from a movie database API to provide real-time information.
 
  ## Technologies Used
